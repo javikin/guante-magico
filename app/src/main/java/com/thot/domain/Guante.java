@@ -2,43 +2,32 @@ package com.thot.domain;
 
 import com.google.gson.Gson;
 
-import java.util.HashMap;
-
 /**
  * Created by javikin on 3/18/17.
  */
 
 public class Guante {
 
-	String content;
-	HashMap<String, String> notes;
+	String action;
+	String word;
 
 	public Guante() {
 	}
 
-	public Guante(String content) {
-		this.content = content;
+	public String getAction() {
+		return action;
 	}
 
-	public Guante(String content, HashMap<String, String> notes) {
-		this.content = content;
-		this.notes = notes;
+	public void setAction(String action) {
+		this.action = action;
 	}
 
-	public String getContent() {
-		return content;
+	public String getWord() {
+		return word;
 	}
 
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public HashMap<String, String> getNotes() {
-		return notes;
-	}
-
-	public void setNotes(HashMap<String, String> notes) {
-		this.notes = notes;
+	public void setWord(String word) {
+		this.word = word;
 	}
 
 	public static Guante fromJson(String json){
